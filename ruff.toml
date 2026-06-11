@@ -1,0 +1,10 @@
+line-length = 100
+
+[lint]
+select = ["E", "F", "ANN", "I", "N", "ASYNC", "TID", "T20", "PT", "PL", "FAST"]
+ignore = ["PLR2004", "PLR0913"]
+
+[lint.per-file-ignores]
+# Ignore `E501` (line length) in all prompt files
+"**/prompt.py" = ["E501"]
+"**/prompts.py" = ["E501"]

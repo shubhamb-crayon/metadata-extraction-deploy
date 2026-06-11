@@ -1,0 +1,45 @@
+# Local config — never commit
+config.mk
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# uv / virtual environments
+.venv/
+venv/
+.uv/
+
+# Type checking & linting caches
+.mypy_cache/
+.ruff_cache/
+.pytype/
+
+# Test & coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Streamlit
+.streamlit/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDEs
+.vscode/
+.idea/
+*.iml

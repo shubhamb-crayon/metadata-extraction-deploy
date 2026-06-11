@@ -1,0 +1,8 @@
+# Copy this file to config.mk and fill in your values.
+# config.mk is gitignored — never commit it.
+
+# Absolute path to the repo root on your machine
+APP_DIR := /path/to/metadata-extraction-app
+
+# AWS account ID (12-digit number)
+AWS_ACCOUNT_ID := 000000000000

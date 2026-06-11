@@ -1,0 +1,20 @@
+[project]
+name = "metadata-extraction-deploy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "shubhamb-crayon", email = "shubham.bathwal@crayon.com" }
+]
+requires-python = ">=3.13"
+dependencies = [ "streamlit>=1.58.0"]
+
+[build-system]
+requires = ["uv_build>=0.8.8,<0.9.0"]
+build-backend = "uv_build"
+
+[project.scripts]
+dev      = "metadata_extraction_deploy.cli:run_app"
+lint     = "metadata_extraction_deploy.cli:run_lint"
+lint-fix = "metadata_extraction_deploy.cli:run_lint_fix"
+format   = "metadata_extraction_deploy.cli:run_format"

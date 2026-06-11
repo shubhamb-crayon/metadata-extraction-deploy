@@ -1,0 +1,25 @@
+repos:
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.0
+    hooks:
+      - id: gitleaks
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    # Ruff version.
+    rev: v0.15.12
+    hooks:
+      # Run the linter.
+      - id: ruff-check
+        types_or: [python, pyi]
+        args: [--fix]
+      # Run the formatter.
+      - id: ruff-format
+        types_or: [python, pyi]
+
+  - repo: https://github.com/astral-sh/uv-pre-commit
+    # uv version.
+    rev: 0.11.11
+    hooks:
+      # run uv lock for common package and all FRs, backend services
+      - id: uv-lock
+        files: ^(uv\.lock|pyproject\.toml|uv\.toml|.*/uv\.lock|.*/pyproject\.toml|.*/uv\.toml)$
