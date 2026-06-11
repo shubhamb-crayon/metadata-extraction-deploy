@@ -8,3 +8,7 @@ ignore = ["PLR2004", "PLR0913"]
 # Ignore `E501` (line length) in all prompt files
 "**/prompt.py" = ["E501"]
 "**/prompts.py" = ["E501"]
+# Streamlit entry point — capitalised name is intentional for sidebar label
+"**/Home.py" = ["N999"]
+# Streamlit pages — PascalCase filenames are intentional
+"**/pages/*.py" = ["N999"]

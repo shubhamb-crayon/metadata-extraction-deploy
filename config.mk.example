@@ -1,8 +1,21 @@
 # Copy this file to config.mk and fill in your values.
 # config.mk is gitignored — never commit it.
 
-# Absolute path to the repo root on your machine
+# ── Infrastructure ─────────────────────────────────────────────────────────────
+
+# Absolute path to the metadata-extraction-app repo on your machine
 APP_DIR := /path/to/metadata-extraction-app
 
 # AWS account ID (12-digit number)
 AWS_ACCOUNT_ID := 000000000000
+
+# ── Content API ────────────────────────────────────────────────────────────────
+
+# Internal middleware API endpoint
+API_URL := <API-DOMAIN>/internal/v1/middleware/content
+
+# API auth token — keep secret
+AUTH_TOKEN := <your-auth-token>
+
+# S3 bucket used for content orchestration
+BUCKET := metadata-extraction-orchestration

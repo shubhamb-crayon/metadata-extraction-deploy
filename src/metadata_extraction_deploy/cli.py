@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 def run_app() -> None:
-    app = Path(__file__).parent / "app.py"
+    app = Path(__file__).parent / "Home.py"
     result = subprocess.run(["streamlit", "run", str(app), *sys.argv[1:]], check=False)
     sys.exit(result.returncode)
 
